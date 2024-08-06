@@ -1,0 +1,355 @@
+body {
+  background-color: rgb(251,251,251); 
+  margin: 0;
+}
+
+.header {
+  padding: 10px;
+  background: rgb(132, 165, 157);
+  display: flex; 
+  justify-content: center;
+}
+
+.banner {
+  width: 100%;
+  height: 320px;
+  background-position: center;
+  background-image: url("img/banner.jpg");
+  background-repeat: no-repeat;
+  margin-top: 40px;
+}
+
+hr {
+  width: 350px;
+  height: 1.5px;
+  background-color: black;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: white;
+  border-radius: 20px;
+  border-color: black;
+  border-style: solid;
+
+  padding: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 10px;
+
+  font-size: 15px;
+  font-family:"Poly";
+  font-weight: 500;
+  color: black;
+}
+
+button:hover {
+  border-color: rgb(132, 165, 157);
+  color: rgb(132, 165, 157);
+}
+
+.contatti{
+  font-size: 15px;
+  font-family:"Poly";
+  font-weight: 500;
+  color: black;
+  text-decoration: underline;
+}
+
+footer {
+  padding: 10px;
+  background: rgb(132, 165, 157);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+.contatti:hover {
+  color: rgb(132, 155, 167);
+}
+
+img {
+  height: 300px;
+}
+
+#tigri {
+  width: 200px;
+}
+
+.fotografia {
+  height: 160px;
+}
+
+#logo {
+  height: 100px;
+  margin: 20px;
+}
+
+.logo-contatti {
+  height: 50px;
+  margin: 20px;
+}
+
+
+/* CONTENITORI */
+.contenitore {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 67px;
+}
+
+.contenitore-testo { /*home*/
+  width: 650px;
+  margin-left: 50px;
+}
+
+.contenitore-testo-2 { /*fotografie*/
+  margin: 47px;
+}
+
+.contenitore-pagine {
+  width: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contenitore-contatti {
+  margin-top: 20px;
+}
+
+.contenitore-contatti-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 208px;
+}
+
+.contenitore-contatti-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 288px;
+}
+
+.contenitore-opere-1 { /*illustrazioni*/
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 60px;
+  row-gap: 40px;
+}
+
+.contenitore-opere-2 { /*fotografie*/
+  display: grid;
+  grid-template-columns: 240px 240px 240px 240px;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  gap: 50px;
+}
+
+.contenitore-opere-3 { /*altri progetti*/
+  display: grid;
+  grid-template-columns: 600px 447px;
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 73px;
+  gap: 100px;
+}
+
+#contenitore-kirby {
+  display: flex;
+}
+
+/* TESTI */
+h1 {
+  font-size: 20px;
+  font-family:"Poly";
+  font-weight:500 ;
+  color: white;
+}
+
+h2 {
+  font-size: 20px;
+  font-family:"Poly";
+  font-weight:500 ;
+  color: black;
+  text-align: center;
+}
+
+#chisono {
+  text-align: left;
+}
+
+h3 {
+  font-size: 15px;
+  font-family:"Poly";
+  font-weight: 100 ;
+  color: white;
+  margin-left: 20px;
+}
+
+p {
+  font-size: 16px;
+  font-family:"Poly";
+  font-weight: 100 ;
+  color: black;
+}
+
+
+@media only screen and (max-width:1024px) {
+
+  h1 {
+    font-size: 55px;
+  }
+  
+  .banner {
+    margin-top: 0px;
+    height: 400px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 40px;
+  }
+
+  .contenitore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+  }
+
+  .contenitore-testo {
+    width: 850px;
+    margin-left: 0px;
+  }
+
+  hr {
+    width: 700px;
+    height: 2px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .contenitore-bottoni {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 25px;
+    border-radius: 50px;
+    border-width: 3px;
+    font-size: 45px;
+  }
+
+  .contatti{
+    font-size: 45px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  .contenitore-opere-1 { /*illustrazioni*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .opera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    height: 650px;
+  }
+
+  #tigri {
+    width: 400px;
+  }
+
+  .contenitore-opere-2 { /*fotografie*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fotografia {
+    height: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .contenitore-testo-2 { /*fotografie*/
+    margin: 60px;
+  }
+
+  .contenitore-opere-3 { /*altri progetti*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #foto-kirby {
+    height: 400px;
+  }
+
+  #contenitore-kirby {
+    display: flex;
+    width: 760px;
+  }
+
+  #logo {
+    height: 200px;
+    margin-top: 40px;
+    margin-right: 0px;
+  }
+
+  #foto-pompompurin {
+    height: 550px;
+  }
+
+  .contenitore-contatti-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    margin-top: 450px;
+    margin-bottom: 602px;
+  }
+
+  .contenitore-contatti-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 618px;
+  }
+
+  .logo-contatti {
+    height: 60px;
+    margin: 30px;
+  }
+}
